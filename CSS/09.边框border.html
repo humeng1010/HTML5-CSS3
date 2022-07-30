@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border1 {
+            width: 300px;
+            height: 200px;
+            /* 边框的宽度 */
+            border-width: 5px;
+            /* 边框的样式：虚(dashed) 实(solid) 点(dotted)*/
+            border-style: solid;
+            /* border-style: dashed; */
+            /* border-style: dotted; */
+            /* 边框的颜色 */
+            border-color: pink;
+        }
+
+        .border2 {
+            margin-top: 10px;
+            width: 300px;
+            height: 200px;
+            /* 复合写法 */
+            /* border: 5px solid hotpink; */
+            /* 边框单独设置 */
+            border-top: 1px solid pink;
+            border-bottom: 1px solid blue;
+            border-right: 1px solid hotpink;
+            border-left: 1px solid skyblue;
+        }
+
+        .border3 {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            border-top: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border1"></div>
+    <div class="border2"></div>
+    <div class="border3"></div>
+</body>
+
+</html>
