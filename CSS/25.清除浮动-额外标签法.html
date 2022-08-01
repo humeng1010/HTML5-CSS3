@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 清除子元素的浮动带来的父元素的高度的问题 */
+            overflow: hidden;
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+
+        .one,
+        .two {
+            float: left;
+            width: 380px;
+            height: 380px;
+            background-color: pink;
+            margin-left: 10px;
+        }
+
+        .clear {
+            /* 清除浮动 */
+            clear: both;
+        }
+
+        .footer {
+            height: 400px;
+            background-color: rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <!-- 额外标签法-给最后一个浮动的标签后面添加一个额外标签 标签必须是块级元素 -->
+        <!-- 不常用 -->
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
