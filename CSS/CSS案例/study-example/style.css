@@ -289,6 +289,7 @@ a {
 }
 
 .box .box-bd ul li {
+    position: relative;
     float: left;
     width: 228px;
     height: 270px;
@@ -299,6 +300,14 @@ a {
 
 .box .box-bd ul li img {
     width: 100%;
+}
+
+.box .box-bd ul li .hot {
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    width: 36px;
+    height: 18px;
 }
 
 .box .box-bd ul li h4 {
