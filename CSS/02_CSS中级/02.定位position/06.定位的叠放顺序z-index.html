@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w {
+            position: absolute;
+        }
+
+        .xiongda {
+            z-index: 1;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+
+        .xionger {
+            /* 数值越大越靠上 默认auto 如果属性值相同按照书写顺序：后来者居上 数字后不能加单位 只有定位的盒子才有z-index的属性 */
+            z-index: 2;
+            top: 50px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .guangtouqiang {
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xiongda w">熊大</div>
+    <div class="xionger w">熊二</div>
+    <div class="guangtouqiang w">光头强</div>
+
+</body>
+
+</html>
