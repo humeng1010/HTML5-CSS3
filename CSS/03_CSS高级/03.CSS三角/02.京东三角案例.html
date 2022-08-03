@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 200px;
+            margin: 200px auto;
+        }
+
+        .title {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+        }
+
+        /* 注意这个地方要使用container这个类 因为.jd是.container的儿子 这种写法是选择后代 */
+        .container:hover .jd {
+            display: block;
+        }
+
+        .jd {
+            display: none;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            margin-top: 10px;
+        }
+
+        .jd .triangle {
+            position: absolute;
+            top: -15px;
+            width: 0;
+            border: 5px solid transparent;
+            border-bottom: 10px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title"></div>
+        <div class="jd">
+            <div class="triangle"></div>
+        </div>
+        hello
+    </div>
+
+</body>
+
+</html>

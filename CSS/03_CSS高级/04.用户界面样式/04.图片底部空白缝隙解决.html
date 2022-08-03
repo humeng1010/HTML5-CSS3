@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+
+        img {
+            /* 出现留白的原因是图片是与文字的基线对齐的不是底线 比如pjq与a相比下面多出来一点，所以图片下面是有空白的 */
+            /* 解决一 让图片不是与文字的基线对齐(推荐) */
+            vertical-align: bottom;
+            /* 解决二 因为只有行内块元素才有这种问题 我们把行内块转换为block 不过会影响布局 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../images/bili.webp" alt="">pink
+    </div>
+
+</body>
+
+</html>
