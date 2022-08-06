@@ -1,0 +1,12 @@
+div {
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    background-color: pink;
+}
+
+div span {
+    flex: 1;
+    background-color: purple;
+    margin-left: 1px;
+}

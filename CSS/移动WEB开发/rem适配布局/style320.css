@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 80%;
+    background-color: pink;
+}
+
+div span {
+    flex: 1;
+    background-color: purple;
+    margin-bottom: 1px;
+}
